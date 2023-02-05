@@ -1,2 +1,2 @@
 # JS_assignment
-https://github.com/Enthvy/JS_assignment.git
+https://enthvy.github.io/JS_assignment/
