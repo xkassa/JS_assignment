@@ -91,6 +91,7 @@ function game(playRound) {
 
 let cmpPoint = 0;
 let plaPoint = 0;
+let result;
 
 const playerTextElement = document.querySelector("#playerText");
 const computerTextElement = document.querySelector("#computerText");
@@ -104,5 +105,5 @@ choiceButtons.forEach(button => button.addEventListener("click", () => {
     computerPlay()
     computerTextElement.textContent = `Computer: ${computerSelection}`;
     playRound()
-    resultTextElement.textContent = `Result: ${this.result}`;
+    resultTextElement.textContent = `Result: ${result}`;
 }));
