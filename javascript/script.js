@@ -105,5 +105,6 @@ choiceButtons.forEach(button => button.addEventListener("click", () => {
     computerTextElement.textContent = `Computer: ${computerSelection}`;
 let result;
     playRound(playerSelection, computerSelection, result)
+alert(result)
     resultTextElement.textContent = `Result: ${result}`;
 }));
