@@ -15,45 +15,45 @@ function computerPlay() {
 }
 
 function playRound(playerSelection, computerSelection, result) {
-    switch (this.playerSelection) {
+    switch (playerSelection) {
         case "rock":
-            if (computerSelection === this.playerSelection) {
+            if (computerSelection === playerSelection) {
                 
                 return result = "Player tied rock";
             }
             else if (computerSelection === "paper") {
-                cmpPoint++;
+                //cmpPoint++;
                 
                 return result = "Player lost! Paper beats rock.";
             }
             else (computerSelection === "scissors"); {
-                plaPoint++;
+                //plaPoint++;
                 
                 return result = "Player wins! Rock beats scissors";
             }
         case "paper":
-            if (computerSelection === this.playerSelection) {
+            if (computerSelection === playerSelection) {
                 
                 return result = "Player tied paper";
             }
             else if (computerSelection === "scissors") {
-                cmpPoint++;
+               // cmpPoint++;
                 
                 return  result = "Player lost! Scissors beats paper.";
             }
             else (computerSelection === "rock"); {
-                plaPoint++;
+               // plaPoint++;
                 
                 return result = "Player wins! Paper beats rock";
             }
         case "scissors":
             playerSelection = "scissors";
-            if (computerSelection === this.playerSelection) {
+            if (computerSelection === playerSelection) {
                 
                 return result = "Player tied scissors";
             }
             else if (computerSelection === "rock") {
-                cmpPoint++;
+                //cmpPoint++;
                 
                 return result = "Player lost! Rock beats scissors";
             }
@@ -63,7 +63,7 @@ function playRound(playerSelection, computerSelection, result) {
                 return result = "Player wins! Scissors beat paper";
             }
         default:
-            (this.playerSelection !== "rock" && this.playerSelection !== "paper" && this.playerSelection !== "scissor");
+            (playerSelection !== "rock" && this.playerSelection !== "paper" && this.playerSelection !== "scissor");
             result = 'You havent choosen correc input';
     }
 
