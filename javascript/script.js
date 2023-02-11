@@ -91,7 +91,6 @@ function game(playRound) {
 
 let cmpPoint = 0;
 let plaPoint = 0;
-let result;
 
 const playerTextElement = document.querySelector("#playerText");
 const computerTextElement = document.querySelector("#computerText");
@@ -102,8 +101,9 @@ choiceButtons.forEach(button => button.addEventListener("click", () => {
 
     playerSelection = button.textContent.toLocaleLowerCase();
     playerTextElement.textContent = `Player: ${playerSelection}`;
-    computerPlay()
+    const computerSelection = computerPlay();
     computerTextElement.textContent = `Computer: ${computerSelection}`;
-    playRound()
+let result;
+    playRound(playerSelection, computerSelection, result)
     resultTextElement.textContent = `Result: ${result}`;
 }));
